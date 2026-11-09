@@ -1,4 +1,8 @@
 //how assignment of binary literals works with unions on a little-endian system
+/*
+for example, dosHeaderWindowsX64.magic = UINT16_C(0b01011010'01001101); //5A 4D
+results in 4D 5A when output is viewed in a hex editor
+*/
 #include <stdio.h>
 #include <stdint.h>
 
